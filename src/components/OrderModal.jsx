@@ -4,7 +4,7 @@ import { useCart } from '../context/cartContext'
 
 
 function OrderModal ({modalMenu, setModalOn}) {
-    const {cart, addToCart} = useCart()
+    const {addToCart} = useCart()
     const [ options, setOptions ] = useState({'온도': 0, '진하기': 0, '사이즈': 0})
     const [ quantity, setQuantity ] = useState(1)
     const itemOptions = data.options
